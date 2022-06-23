@@ -75,5 +75,13 @@ public class Login_Testcases extends listnersBaseTest{
 		String msg="User ID should be minimum 6 character.";
 		Assert.assertEquals(s, msg);
 	}
+	@Test
+	public void loginwithonlyuserid() {
+		Zerodha_LoginPage zerodha_loginPage=new Zerodha_LoginPage(driver) ;
+		zerodha_loginPage.enterUserId("1234");
+		zerodha_loginPage.clickonSubmit();
+        String status= zerodha_loginPage.clickonlogin();
+        System.out.println(status);
+	}
 	
 }

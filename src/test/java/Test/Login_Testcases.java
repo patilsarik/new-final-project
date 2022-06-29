@@ -87,6 +87,6 @@ public class Login_Testcases extends listnersBaseTest{
 		Zerodha_LoginPage zerodha_loginPage=new Zerodha_LoginPage(driver) ;
 		zerodha_loginPage.clickonSubmit();
         String status= zerodha_loginPage.clickonlogin();
-        System.out.println(status);
+       // System.out.println(status);
 }
 }
